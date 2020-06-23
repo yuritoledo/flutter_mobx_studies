@@ -64,14 +64,14 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(
+              'You have pushed the button this many times:',
+            ),
             Observer(
               builder: (context) => Text(
-                'You have pushed the button this many times:',
+                '${counter.count} ${counter.name}',
+                style: Theme.of(context).textTheme.headline4,
               ),
-            ),
-            Text(
-              '${counter.count}',
-              style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
